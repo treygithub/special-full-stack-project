@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import { Button } from 'react-bootstrap';
 
 class  DeleteBTN extends Component {
     constructor(props){
@@ -14,7 +15,7 @@ handleDeleteProduct(id) {
         render(){
         return(
             <div>
-                <button onClick={ () =>this.handleDeleteProduct(this.props.id)}>Delete</button>
+                <Button onClick={ () =>this.handleDeleteProduct(this.props.id)}>Delete</Button>
             </div>)
 }
 }

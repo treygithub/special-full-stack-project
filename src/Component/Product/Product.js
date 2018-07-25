@@ -4,7 +4,7 @@ import DeleteBTN from './DeleteBTN';
     const Product = (props) =>{
           
         return(
-            <div className="house"> 
+            <div className="items"> 
 
                 <h4>Listing title: {props.title}</h4>
                 <h4>Listing id: {props.id}</h4>

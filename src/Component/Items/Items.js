@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Product from './Product';
-import axios from 'axios'
+import Product from '../Product/Product';
+import axios from 'axios';
+import './Items.css';
 
 class Items extends Component {
   constructor(props) {
@@ -42,8 +43,10 @@ class Items extends Component {
         //Render iteam to screen + link button to form field
          return (
         <div>
-            <div>
+            <div className="container">
+                <div className="products">
                 {instanceLoop}
+                </div>
             </div>
         </div>)
     }

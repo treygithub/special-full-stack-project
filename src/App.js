@@ -1,15 +1,8 @@
 import React, { Component } from 'react';
-import  { NavLink } from 'react-router-dom';
 import Router from './router';
-
-const NavBar = (props) => 
-<nav>
-  <ul>
-    <li><NavLink to='/'>Home</NavLink></li>
-    <li><NavLink to='/Cart'>Cart</NavLink></li>
-    <li><NavLink to='/Items'>Items</NavLink></li>
-  </ul>
-</nav>
+import NavBar from './Component/NavBar/NavBar'
+import './app.css'
+import './Component/NavBar/NavBar.css'
 
 class App extends Component {
   render() {

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+/* fallback */
+.pretty {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+  img{
+    width: 50%;
+    height: 100vh;
+  }
