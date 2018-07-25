@@ -1,0 +1,38 @@
+module.exports = {
+
+// postRequest: ( req, res ) => {
+//   const dbInstance = req.app.set('db');
+//     const {name, address, city, state, zipcode, image_url, mortgage, rent } = req.body;
+
+// dbInstance.newListing([name, address, city, state, zipcode, image_url, mortgage, rent])
+//   .then( payload => {
+//     res.status(200).json(payload)});
+          
+// },
+  
+getRequest: ( req, res ) => {
+  const dbInstance = req.app.set('db');
+
+dbInstance.fetchAll()
+  .then( payload2 => res.status(200).json( payload2 ) )
+    .catch( err => {
+      res.status(500).send(err);
+        console.log(err)
+  });
+},
+  
+  
+deleteRequest: ( req, res, next ) => {
+  const dbInstance = req.app.set('db');
+    const { id } = req.params;
+          
+dbInstance.deleteProduct( [id] )
+  .then( payload3  => 
+    res.sendStatus(200).json(payload3 ) )
+      .catch( err => {
+        res.status(500).send(err);
+          console.log(err)
+    });
+  },
+  
+}
