@@ -3,7 +3,8 @@ import Router from './router';
 import NavBar from './Component/NavBar/NavBar'
 import './app.css'
 import './Component/NavBar/NavBar.css'
-import FooterPage from './Component/Footer/Footer'
+// import Home from './Component/Home/Home';
+import Footer from  './Component/Footer/Footer'
 
 class App extends Component {
   render() {
@@ -12,7 +13,7 @@ class App extends Component {
         <header>
           <NavBar/>
           <Router/>
-          <FooterPage/>
+          <Footer/>
         </header>
       </div>
     );

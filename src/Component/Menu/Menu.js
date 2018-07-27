@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Product from '../Product/Product';
 import axios from 'axios';
-import './Items.css';
+import './Menu.css';
 
-class Items extends Component {
+class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -52,4 +52,4 @@ class Items extends Component {
     }
 }
 
-export default Items;
+export default Menu;

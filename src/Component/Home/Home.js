@@ -1,20 +1,21 @@
 import React from 'react'
 import './Home.css'
 import burger from './burger.jpg';
-import burger2 from './burger2.jpg';
 import {Button, Media, Row, Container, Col} from 'reactstrap';
-// import Svg from '../svg/svg'
+import Mosaic from '../Mosaic/Mosaic';
+import JumboTron from '../JumboTron/JumboTron';
 
-export default function Home(props) {
+export default function Home() {
 
     return(
         <div>
-            {/* <Svg/> */}
-            <Container>
+
+            <JumboTron />
+
+            <Container fluid>
                 <Row>
-                    <Media>
-                    <Col  >
-                        <Media body align="middle">
+                    <Col >
+                        <Media className="content" body align="middle">
                             <Media heading className="pretty">Media Heading</Media>
                             <p>
                                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
@@ -22,29 +23,28 @@ export default function Home(props) {
                                 tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
                                 fringilla. Donec lacinia congue felis in faucibus.
                             </p>
-                            <p>
-                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                                ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                                tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                                fringilla. Donec lacinia congue felis in faucibus.
-                            </p>
+                          
+                            <br/>
                             <Button outline color="secondary">View Menu</Button>
                         </Media>
                     </Col>
                      <Col >   
-                        <Media >
-                            <img style={{ width:'80%',height:'100vh '}} src={burger} />
+                        <Media  >
+                            <img style={{ width:'100%',height:'100vh '}} src={burger} alt="Food" />
                         </Media>
-                     </Col>   
-                    </Media>
+                     </Col> 
                 </Row>
             </Container>
 
-            <Container>
+            <Container fluid>
                 <Row>
-                    <Media>
-                    <Col  >
-                        {/* <Media body align="middle">
+                        <Col  >
+                            <Media >
+                                <img style={{ width:'100%',height:'100vh '}} src={burger} alt="Food" />
+                            </Media>
+                        </Col>
+                        <Col >   
+                        <Media className="content" body align="middle">
                             <Media heading className="pretty">Media Heading</Media>
                             <p>
                                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
@@ -52,49 +52,18 @@ export default function Home(props) {
                                 tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
                                 fringilla. Donec lacinia congue felis in faucibus.
                             </p>
-                            <p>
-                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                                ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                                tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                                fringilla. Donec lacinia congue felis in faucibus.
-                            </p>
-                            <Button outline color="secondary">View Menu</Button>
-                        </Media> */}
-
-                         <Media >
-                            <img style={{ width:'80%',height:'100vh '}} src={burger} />
-                        </Media>
-                    </Col>
-                     <Col >   
-                        {/* <Media >
-                            <img style={{ width:'80%',height:'100vh '}} src={burger} />
-                        </Media> */}
-                            <Media body align="middle">
-                            <Media heading className="pretty">Media Heading</Media>
-                            <p>
-                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                                ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                                tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                                fringilla. Donec lacinia congue felis in faucibus.
-                            </p>
-                            <p>
-                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                                ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                                tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                                fringilla. Donec lacinia congue felis in faucibus.
-                            </p>
+                          
+                            <br/>
                             <Button outline color="secondary">View Menu</Button>
                         </Media>
                      </Col>   
-                    </Media>
                 </Row>
             </Container>
 
-            <Container>
+            <Container fluid>
                 <Row>
-                    <Media>
-                    <Col  >
-                        <Media body align="middle">
+                    <Col >
+                        <Media className="content" body align="middle">
                             <Media heading className="pretty">Media Heading</Media>
                             <p>
                                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
@@ -102,24 +71,21 @@ export default function Home(props) {
                                 tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
                                 fringilla. Donec lacinia congue felis in faucibus.
                             </p>
-                            <p>
-                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                                ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                                tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                                fringilla. Donec lacinia congue felis in faucibus.
-                            </p>
+                          
+                            <br/>
                             <Button outline color="secondary">View Menu</Button>
                         </Media>
                     </Col>
                      <Col >   
-                        <Media >
-                            <img style={{ width:'80%',height:'100vh '}} src={burger} />
+                        <Media  >
+                            <img style={{ width:'100%',height:'100vh '}} src={burger} alt="Food" />
                         </Media>
-                     </Col>   
-                    </Media>
+                     </Col> 
                 </Row>
             </Container>
 
+            
+        <Mosaic/>
             
         </div>
     )
