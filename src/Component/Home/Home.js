@@ -5,7 +5,7 @@ import {Button, Media, Row, Container, Col} from 'reactstrap';
 import Mosaic from '../Mosaic/Mosaic';
 import JumboTron from '../JumboTron/JumboTron';
 
-export default function Home() {
+export default function Home(props) {
 
     return(
         <div>
@@ -43,16 +43,16 @@ export default function Home() {
                                 <img style={{ width:'100%',height:'100vh '}} src={burger} alt="Food" />
                             </Media>
                         </Col>
-                        <Col >   
+                        <Col  >   
                         <Media className="content" body align="middle">
-                            <Media heading className="pretty">Media Heading</Media>
+                            <Media  heading className="pretty">Media Heading</Media>
                             <p>
                                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
                                 ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
                                 tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
                                 fringilla. Donec lacinia congue felis in faucibus.
                             </p>
-                          
+                                                      
                             <br/>
                             <Button outline color="secondary">View Menu</Button>
                         </Media>
@@ -83,7 +83,6 @@ export default function Home() {
                      </Col> 
                 </Row>
             </Container>
-
             
         <Mosaic/>
             

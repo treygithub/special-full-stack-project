@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import bbq from './bbq.mp4';
+import './JumboTron.css'
 
 class JumboTron extends Component  {
     constructor (){
@@ -11,11 +13,9 @@ class JumboTron extends Component  {
 render(){
     return(
         <div>
-            <section id="showcase">
-                <div>
-                    JumboTron
-                </div>
-            </section>
+            <header className="wrapper">
+                <video src={bbq} autoplay='true' loop="true"></video>
+            </header>
         </div>
     )
 }

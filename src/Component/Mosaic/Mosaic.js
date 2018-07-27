@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Mosaic.css'
 
 class Mosaic extends Component  {
     constructor (){
@@ -11,11 +12,7 @@ class Mosaic extends Component  {
 render(){
     return(
         <div>
-            <section id="showcase">
-                <div>
-                    Mosaic
-                </div>
-            </section>
+  
         </div>
     )
 }

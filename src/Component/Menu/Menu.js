@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Product from '../Product/Product';
 import axios from 'axios';
 import './Menu.css';
+import {Col, Container, Row} from 'reactstrap';
+
 
 class Menu extends Component {
   constructor(props) {
@@ -32,22 +34,24 @@ class Menu extends Component {
       let {items} = this.state
       let instanceLoop  = items.map((e,i) => {
         return (
+          <Col sm="4">
           <Product 
             key={i}
             id={e.card_id}
             url={e.url}
             title={e.title}
             />  
+            </Col>
          )})
 
         //Render iteam to screen + link button to form field
          return (
         <div>
-            <div className="container">
-                <div className="products">
+            <Container className="container">
+                <Row className="products">
                 {instanceLoop}
-                </div>
-            </div>
+                </Row>
+            </Container>
         </div>)
     }
 }
