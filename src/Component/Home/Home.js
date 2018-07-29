@@ -5,7 +5,8 @@ import {Button, Media, Row, Container, Col} from 'reactstrap';
 import Mosaic from '../Mosaic/Mosaic';
 import JumboTron from '../JumboTron/JumboTron';
 import WOW from 'wowjs';
-
+// import Admin from '../../admin/admin';
+ 
 
 class Home extends Component {
     constructor(props){
@@ -18,6 +19,7 @@ class Home extends Component {
         const wow = new WOW.WOW();
         wow.init();
       }
+
       
       render(){
     return(
@@ -28,7 +30,7 @@ class Home extends Component {
             <Container fluid>
                 <Row>
                     <Col >
-                        <Media className="content wow fadeInUp" data-wow-duration="3s" body align="middle">
+                        <Media className="content wow fadeInUp myfadeOut" data-wow-duration="2s" data-wow-offset="300"  body align="middle">
                             <Media heading className="pretty">Media Heading</Media>
                             <p>
                                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
@@ -58,7 +60,7 @@ class Home extends Component {
                             </Media>
                         </Col>
                         <Col  >   
-                        <Media className="content wow fadeInUp content" data-wow-duration="1s"  body align="middle">
+                        <Media className="content wow fadeInRight content" data-wow-duration="2s" data-wow-offset="200"  body align="middle">
                             <Media  heading className="pretty">Media Heading</Media>
                             <p>
                                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
@@ -77,7 +79,7 @@ class Home extends Component {
             <Container fluid>
                 <Row>
                     <Col >
-                        <Media className="content wow fadeInUp" data-wow-duration="1s"  body align="middle">
+                        <Media className="content wow fadeInLeft" data-wow-offset="200" data-wow-duration="2s"  body align="middle">
                             <Media heading className="pretty">Media Heading</Media>
                             <p>
                                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
@@ -97,7 +99,8 @@ class Home extends Component {
                      </Col> 
                 </Row>
             </Container>
-            
+
+                       
         <Mosaic/>
             
         </div>

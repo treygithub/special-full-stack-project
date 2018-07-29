@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, Button, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import './NavBar.css'
+import './NavBar.css';
 
 export default class NavBar extends Component {
   constructor(props) {
@@ -46,6 +46,9 @@ export default class NavBar extends Component {
                   </NavItem>
                   <NavItem>
                     <NavLink tag={Link} to='/Cart'>Cart</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink tag={Link} to='/Login'>Login</NavLink>
                   </NavItem>
                  </Nav>
               </Collapse>

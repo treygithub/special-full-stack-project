@@ -5,6 +5,8 @@ import Cart from './Component/Cart/Cart'
 import Menu from './Component/Menu/Menu';
 import About from './Component/About/About';
 import Features from './Component/Features/Features';
+import Admin from './admin/admin';
+import Login from './Component/Login/Login';
 
 
 
@@ -16,6 +18,8 @@ const Router = () =>  (
           <Route path='/About' component={ About }/>
           <Route path='/Features' component={ Features }/>
           <Route path='/Cart' component={ Cart }/>
+          <Route path='/Admin' component={ Admin }/>
+          <Route path='/Login' component={ Login }/>
         </Switch>
       
 );

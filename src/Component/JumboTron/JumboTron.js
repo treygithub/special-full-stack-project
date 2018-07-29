@@ -14,7 +14,7 @@ render(){
     return(
         <div>
             <header className="wrapper">
-                <video src={bbq} autoplay='true' loop="true"></video>
+                <video src={bbq} autoPlay='true' loop="true"></video>
             </header>
         </div>
     )

@@ -1,14 +1,14 @@
 module.exports = {
 
-// postRequest: ( req, res ) => {
-//   const dbInstance = req.app.set('db');
-//     const {name, address, city, state, zipcode, image_url, mortgage, rent } = req.body;
+  addMenuItem: ( req, res ) => {
+  const dbInstance = req.app.set('db');
+    const {product_id, cat_id_table, description, image_url, price } = req.body;
 
-// dbInstance.newListing([name, address, city, state, zipcode, image_url, mortgage, rent])
-//   .then( payload => {
-//     res.status(200).json(payload)});
+dbInstance.newMenuPost([product_id, cat_id_table, description, image_url, price])
+  .then( payload => {
+    res.status(200).json(payload)});
           
-// },
+},
   
 getRequest: ( req, res ) => {
   const dbInstance = req.app.set('db');
